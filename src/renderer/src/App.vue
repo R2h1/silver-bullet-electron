@@ -1,26 +1,16 @@
 <script setup lang="ts">
-import Versions from './components/Versions.vue'
-
 const ipcHandle = () => window.electron.ipcRenderer.send('ping')
 </script>
 
 <template>
-  <img alt="logo" class="logo" src="./assets/electron.svg" />
-  <div class="creator">Powered by electron-vite</div>
-  <div class="text">
-    Build an Electron app with
-    <span class="vue">Vue</span>
-    and
-    <span class="ts">TypeScript</span>
-  </div>
-  <p class="tip">Please try pressing <code>F12</code> to open the devTool</p>
+  <img alt="logo" class="logo" src="./assets/main.png" />
+  <div class="text">silver-bullet-electron</div>
   <div class="actions">
     <div class="action">
-      <a href="https://electron-vite.org/" target="_blank" rel="noreferrer">Documentation</a>
+      <a href="https://cn.electron-vite.org/" target="_blank" rel="noreferrer">文档</a>
     </div>
     <div class="action">
-      <a target="_blank" rel="noreferrer" @click="ipcHandle">Send IPC</a>
+      <a target="_blank" rel="noreferrer" @click="ipcHandle">IPC 测试</a>
     </div>
   </div>
-  <Versions />
 </template>

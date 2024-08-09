@@ -1,12 +1,10 @@
 import { contextBridge } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
 
-// Custom APIs for renderer
+// 渲染器的定制api
 const api = {}
 
-// Use `contextBridge` APIs to expose Electron APIs to
-// renderer only if context isolation is enabled, otherwise
-// just add to the DOM global.
+// 使用' contextBridge ' api只在启用上下文隔离的情况下将Electron api暴露给渲染器，否则只添加到DOM全局。
 if (process.contextIsolated) {
   try {
     contextBridge.exposeInMainWorld('electron', electronAPI)
