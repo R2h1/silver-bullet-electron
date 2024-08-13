@@ -24,6 +24,7 @@ nsis:
   createStartMenuShortcut: true
   oneClick: false
   perMachine: true
+  include: build/uninstaller.nsh
 mac:
   entitlementsInherit: build/entitlements.mac.plist
   extendInfo:
