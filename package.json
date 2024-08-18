@@ -21,7 +21,8 @@
   },
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.0",
-    "@electron-toolkit/utils": "^3.0.0"
+    "@electron-toolkit/utils": "^3.0.0",
+    "vue-fluid-dnd": "^0.7.0"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config": "^1.0.2",
@@ -43,7 +44,7 @@
     "vue": "^3.4.15",
     "vue-tsc": "^1.8.27"
   },
-  "engines" : {
-    "node" : ">=18.18.2"
+  "engines": {
+    "node": ">=18.18.2"
   }
 }

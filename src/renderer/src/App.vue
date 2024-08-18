@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Dnd from './components/dnd.vue'
 const ipcHandle = () => window.electron.ipcRenderer.send('ping')
 </script>
 
@@ -13,4 +14,5 @@ const ipcHandle = () => window.electron.ipcRenderer.send('ping')
       <a target="_blank" rel="noreferrer" @click="ipcHandle">IPC 测试</a>
     </div>
   </div>
+  <Dnd></Dnd>
 </template>
